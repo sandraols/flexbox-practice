@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+}
+
+.block { 
+    min-height: 100vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+}
+
+
+/*--------------------------*/
+/* FIRST PART */
+/*-------------------------*/
+
+.square {
+    border-radius: 8px;
+    margin: 7px;
+    box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.4);
+    max-width: 78px;
+    min-height: 78px;
+    flex-basis: 78px;
+}
+
+.first-block {
+    background-color: rgb(103, 111, 124);
+    justify-content: center;
+}
+
+.first-block--container {
+    max-width: 468px;
+    height: 160px;
+    flex-basis: 468px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+/*------- CONTAINER 1 --------*/
+
+.first-block--container:first-child {
+    background-color: #EAE8FF;
+    align-items: flex-end;
+}
+
+.square--container1 {
+    background-color: #25283D;
+}
+
+
+/*------- CONTAINER 2 --------*/
+
+.first-block--container:nth-of-type(2) {
+    background-color: #FF7ACC;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.square--container2 {
+    background-color: rgb(252, 250, 110);
+}
+
+
+/*------- CONTAINER 3 --------*/
+
+.first-block--container:nth-of-type(3) {
+    background-color: rgb(252, 250, 110);
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.square--container3 {
+    background-color: #FF7ACC;
+}
+
+
+/*------- CONTAINER 4 --------*/
+
+.first-block--container:nth-of-type(4) {
+    background-color: #7D82B8;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.square--container4 {
+    background-color: #F4B2D3;
+}
+
+.square--bottom {
+    align-self: flex-end;
+}
+
+
+/*------- CONTAINER 5 --------*/
+
+.first-block--container:nth-of-type(5) {
+    background-color: #F4B2D3;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.square--container5 {
+    background-color: #7D82B8;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square--container5:nth-of-type(2) {
+    height: 78px;
+    align-self: center;
+}
+
+.square__text {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #EAE8FF;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+/*------- CONTAINER 6 --------*/
+
+.first-block--container:nth-of-type(6) {
+    background-color: #25283D;
+    justify-content: center;
+    align-items: center;
+}
+
+.square--container6 {
+    background-color: #EAE8FF;
+}
+
+.square--container6:nth-of-type(2) {
+    flex-grow:  2;
+    max-width: 156px;
+}
+
+
+/*--------------------------*/
+/* SECOND PART */
+/*-------------------------*/
+
+
+.second-block {
+    background-color: #fcfa6e;
+    justify-content: center;
+}
+
+.wrapper {
+    min-width: 69vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.second-block--container {
+    flex-wrap: wrap;
+    max-width: 273px;
+    height: 220px;
+    flex-basis: 273px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+}
+
+.circle {
+    border-radius: 50%;
+    margin: 7px;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.4);
+    max-width: 50px;
+    min-height: 50px;
+    flex-basis: 50px;
+}
+
+
+/*------- CONTAINER 1 --------*/
+
+.second-block--container:first-child {
+    background-color: #C3B299;
+    align-content: flex-start;
+}
+
+.circle--container1 {
+    background-color: #F6E8EA;
+}
+
+
+/*------- CONTAINER 2 --------*/
+
+.second-block--container:nth-of-type(2) {
+    background-color: #66B3BA;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    align-content: flex-start;
+    align-items: flex-end;
+}
+
+.circle--container2 {
+    background-color: #25283D;
+}
+
+
+/*------- CONTAINER 3 --------*/
+
+.second-block--container:nth-of-type(3) {
+    background-color: #CFFFB0;
+    align-content: space-between;
+    justify-content: space-around;
+}
+
+.circle--container3 {
+    background-color: #C3B299;
+}
+
+
+/*------- CONTAINER 4 --------*/
+
+.second-block--container:nth-of-type(4) {
+    background-color: #25283D;
+    align-content: space-around;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+
+.circle--container4 {
+    background-color: #CFFFB0;
+}
+
+
+/*------- CONTAINER 5 --------*/
+
+.second-block--container:nth-of-type(5) {
+    background-color: #F6E8EA;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.circle--container5 {
+    background-color: #66B3BA;
+}
+
+/* Instead of div .wrapper */
+/* IS THIS SOLUTION BETTER? SEE ALSO HTML */
+
+/*------- HIDDEN CONTAINER --------*/  
+
+/* .hidden--container {
+    visibility: hidden;
+} */
